@@ -1,0 +1,101 @@
+
+.gde-page-content {
+    .uagb-column__inner-wrap {
+        padding: 0 !important;
+    
+        p {
+            padding: 10px 0px !important;
+        }
+
+        .wp-block-uagb-icon-list {
+            padding-top: 10px;
+            padding-bottom: 10px;;
+            .uagb-icon-list__wrap {
+                .wp-block-uagb-icon-list-child {
+                    .uagb-icon-list__content-wrap {
+                        .uagb-icon-list__label {
+                            text-decoration: underline;
+                            font-size: 17px;
+                            font-family: $latoBold;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .wpcf7 {
+
+            @media (max-width: 915px) {
+                position: relative;
+                left: 20px;
+            }
+            .wpcf7-form {
+                .gde-form-page-wrapper {
+                    .gde-form-row {
+                        margin-bottom: 30px;
+                        .gde-form-col {
+
+                            @media (max-width: 915px) {
+                                width: 92%;
+                            }
+                            img {
+                                width: 350px;
+                            }
+
+                            .form-button {
+                                padding: 15px 20px;
+                                font-family: $latoBold;
+                                font-size: 15px;
+                            }
+
+                            .gde-form-select {
+                                label {
+                                    font-size: 19px;
+                                    font-family: $latoBold;
+
+                                    @media (max-width: 915px) {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            label {
+
+                                .astx {
+                                    display: inline-flex;
+                                    margin-left: 10px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .gde-hosts {
+            h2 {
+                color:$gde-primary;
+                text-align: center; 
+            }
+
+            p {
+                text-align: center;
+            }
+
+            .is-style-rounded {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    max-width: none;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

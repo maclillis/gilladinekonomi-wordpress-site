@@ -1,0 +1,238 @@
+.gde-footer-wrapper {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: $gde-primary;
+    justify-content: center;
+
+    .gde-inner-footer-wrapper {
+
+        width: $fullWidth;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        color: $gde-white;
+        padding-bottom: 65px;
+
+        @media (max-width: 1200px){
+            width: 100%;
+            margin: 0px 25px 0 30px;
+        }
+
+        @media (max-width: 915px){
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .gde-footer-left {
+            display: flex;
+            width: 705px;
+
+            @media (max-width: 915px){
+                width: 100%;
+                flex-direction: column;
+            }
+
+            p {
+                padding-bottom: 25px;
+                font-family: $latoBold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .gde-footer-menu {
+
+                @media (max-width: 915px){
+                    max-width: 100%;
+                    padding: 0;
+                }  
+
+                .gde-footer-menu-content-row {
+
+                    @media (max-width: 915px){
+                        flex-direction: column;
+                    }  
+
+                    .gde-footer-menu-content-col {
+
+                        @media (max-width: 915px){
+                            max-width: 100%;
+                        }  
+
+                    }
+                }
+
+                .gde-footer-menu-list-left {
+                    @media (max-width: 915px){
+                        width: 106%;
+                    }                   
+                }
+
+                .gde-footer-menu-list-right {
+                    border-right: 1px solid $gde-white;
+
+                    @media (max-width: 915px){
+                        border: none;
+                        width: 106%;
+                    }
+                }
+
+                ul#menu-sidfotsnavigering-vanster, ul#menu-sidfotsnavigering-hoger {
+
+                    @media (max-width: 915px) {
+                        text-align: center;
+                        margin: 0 auto;
+                      }
+
+                    li {
+                        margin: 15px 0;
+                        letter-spacing: 1px;
+                        font-family: $latoLight;
+                        font-size: 14px;
+
+                        @media (max-width: 915px) {
+                            font-size: 18px;
+                            padding: 25px;
+                            margin: 0;
+                            border-bottom: 1px solid #4eb8c7;
+                            font-family: $latoRegular;
+                          }
+                        a {
+                            color: $gde-white;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+                p {
+                    @media (max-width: 915px) {
+                        text-align: center;
+                        width: 106%;
+                      }
+                }
+
+            }
+            .gde-footer-socials {
+
+                @media (max-width: 915px){
+                    max-width: 100%;
+                    margin-left: 0;
+                }  
+
+                margin-left: 30px;
+
+                p:first-child {
+                    padding-bottom: 35px;
+
+                    @media (max-width: 915px) {
+                        padding: 40px 0;
+                        text-align: center;
+                        font-size: 18px;
+                        width: 106%;
+                      }
+                }
+
+                ul {
+                    @media (max-width: 915px) {
+                        width: 106%;
+                      }
+                    li {
+
+                        padding-bottom: 10px;
+
+                        @media (max-width: 915px) {
+                            font-size: 18px;
+                            padding: 25px;
+                            border-bottom: 1px solid #4eb8c7;
+
+                            &:first-child {
+                                padding-top: 0;
+                            }
+                          }
+
+                        .gde-social-icons {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        a {
+                            display: flex;
+                            color: $gde-white;
+
+                            p {
+                                align-self: center;
+                                padding: 0 10px;
+                                font-family: $latoLight;
+                                font-size: 14px;
+
+                                @media (max-width: 915px) {
+                                    font-size: 18px;
+                                    font-family: $latoRegular;
+                                  }
+                            }
+
+                            @media (max-width: 915px) {
+                                text-align: center;
+                                margin: 0 auto;
+                                display: flex;
+                                justify-content: center;
+                              }
+                        }
+                    }
+                }
+            }
+        }
+
+        .gde-footer-right {
+
+            @media (max-width: 915px) {
+                padding-top: 80px;
+            }
+
+
+            .gde-footer-logo {
+                text-align: right;
+
+                @media (max-width: 915px) {
+                    text-align: center;
+                }
+
+                .gde-finans-logo {
+                    width: 40%;
+
+                    @media (max-width: 915px) {
+                        width: 20%;
+                    }
+                }
+            }
+
+            .gde-footer-information {
+                text-transform: uppercase;
+                text-align: right;
+                margin-top: 10px;
+                font-size: 14px;
+
+                @media (max-width: 915px) {
+                    text-align: center;
+                }
+
+                a {
+                    font-family: $latoBold;
+                    color: $gde-white;
+                    margin-top: 0px;
+
+                    &:last-child {
+                        padding-top: 5px;
+                        text-transform: none;
+
+                        p {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
